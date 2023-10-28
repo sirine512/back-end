@@ -34,4 +34,6 @@ mongoose
   app.use('/contact',contactRoutes)
   app.use('/login',authRoutes)
 
-  
+  app.use ((req,res)=>{
+    res.send('API is running..')
+  })
